@@ -1,0 +1,23 @@
+{
+  "name": "dk_modale_package",
+  "version": "1.0.0",
+  "description": "react modale package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/denisk13005/dk_modale_package.git"
+  },
+  "author": "kirmann denis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/denisk13005/dk_modale_package/issues"
+  },
+  "homepage": "https://github.com/denisk13005/dk_modale_package#readme",
+  "devDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
