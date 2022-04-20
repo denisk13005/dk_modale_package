@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 
 import {Modal} from '../components/Modal'
@@ -6,5 +6,9 @@ import {Modal} from '../components/Modal'
 const stories = storiesOf('App Test',module)
 
 stories.add('App', () => {
-  return (<Modal/>)
+
+  let [modalIsOpen,setModalIsOpen] = useState(true);
+  
+  
+  return (<Modal status={modalIsOpen}/>)
 })
