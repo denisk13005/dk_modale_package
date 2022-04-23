@@ -1,6 +1,6 @@
 {
   "name": "dk_modale_package",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "react modale package",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
