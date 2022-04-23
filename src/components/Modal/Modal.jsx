@@ -1,6 +1,4 @@
 import React from "react"
-import FooterModale from "../FooterModale/FooterModale"
-import HeaderModale from "../Header/HeaderModale"
 import "./modal.css"
 
 export const Modal = (props) => {
@@ -23,7 +21,9 @@ export const Modal = (props) => {
       className={status ? "openModal" : "closeModal"}
       style={backgroundModalContainerStyle}
     >
-      <HeaderModale headerMsg={headerMsg} headerStyle={headerStyle} />
+      <div className="headerModal" style={headerStyle}>
+        <h1>{headerMsg}</h1>
+      </div>
       <div className="modalContainer" style={modalContainerStyle}>
         <p style={modalMessageStyle}>{modalMessage}</p>
         <button
@@ -32,7 +32,9 @@ export const Modal = (props) => {
           style={closeBtnStyle}
         ></button>
       </div>
-      <FooterModale footerMsg={footerMsg} footerStyle={footerStyle} />
+      <div className="footerModale" style={footerStyle}>
+        <h1>{footerMsg}</h1>
+      </div>
     </div>
   )
 }
