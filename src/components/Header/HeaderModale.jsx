@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react"
+import "./headerModale.css"
 
-const HeaderModale = () => {
+const HeaderModale = ({ headerMsg, headerStyle }) => {
   return (
-    <div>
-        <h1>header</h1>
+    <div className="headerModal" style={headerStyle}>
+      <h1>{headerMsg}</h1>
     </div>
-  );
-};
+  )
+}
 
-export default HeaderModale;
+export default HeaderModale

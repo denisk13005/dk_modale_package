@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react"
+import "./footerModale.css"
 
-const FooterModale = () => {
+const FooterModale = ({ footerMsg, footerStyle }) => {
   return (
-    <div>
-        <h1>Footer</h1>
+    <div className="footerModale" style={footerStyle}>
+      <h1>{footerMsg}</h1>
     </div>
-  );
-};
+  )
+}
 
-export default FooterModale;
+export default FooterModale
