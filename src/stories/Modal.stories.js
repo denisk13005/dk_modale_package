@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { storiesOf } from "@storybook/react";
 
-import {Modal} from '../components/Modal'
+import { Modal } from '../components/Modal'
 
-const stories = storiesOf('App Test',module)
+const stories = storiesOf('App Test', module)
 
 stories.add('App', () => {
 
-  let [modalIsOpen,setModalIsOpen] = useState(true);
-  
-  
-  return (<Modal status={modalIsOpen}/>)
+  let [modalIsOpen, setModalIsOpen] = useState(true);
+
+
+  return (<Modal status={modalIsOpen} message={'enregistrement réussi'}/>)
 })
