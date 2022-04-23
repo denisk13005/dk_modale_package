@@ -9,7 +9,6 @@ export const Modal = (props) => {
   return (
     <div className={status ? "openModal" : "closeModal"}>
       <HeaderModale/>
-
       <div className="modalContainer">
         <p>{message}</p>
         <button onClick={() => toggleModal()}>X</button>
