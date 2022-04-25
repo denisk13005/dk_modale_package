@@ -1,7 +1,22 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "./modal.css"
-
+/**
+ *
+ * @param {boolean} status true if modal is open
+ * @param {object}  backgroundModalContainerStyle style for modal background container
+ * @param {object} modalContainerStyle style for modal container
+ * @param {object} modalMessageStyle style for modal message
+ * @param {string} modalMessage modal message
+ * @param {func} toggleModale function for close the modal in this component
+ * @param {object} closeBtnStyle style for close btn
+ * @param {object} headerStyle header style
+ * @param {string} headerMsg header message
+ * @param {object} footerStyle footer style
+ * @param {string} footerMsg footer message
+ *
+ * @returns
+ */
 export const Modal = (props) => {
   let {
     status,
