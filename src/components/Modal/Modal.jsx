@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import "./modal.css"
 
 export const Modal = (props) => {
@@ -37,4 +38,18 @@ export const Modal = (props) => {
       </div>
     </div>
   )
+}
+
+Modal.propTypes = {
+  status: PropTypes.bool.isRequired,
+  backgroundModalContainerStyle: PropTypes.object,
+  modalContainerStyle: PropTypes.object,
+  modalMessageStyle: PropTypes.object,
+  modalMessage: PropTypes.string.isRequired,
+  toggleModal: PropTypes.func.isRequired,
+  closeBtnStyle: PropTypes.object,
+  headerStyle: PropTypes.object,
+  headerMsg: PropTypes.string,
+  footerStyle: PropTypes.object,
+  footerMsg: PropTypes.string,
 }
