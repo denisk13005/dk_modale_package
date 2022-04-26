@@ -21,12 +21,12 @@ stories.add("App", () => {
     <Modal
       status={modalIsOpen}
       modalMessage={modalMessage}
-      backgroundModalContainerStyle={backgroundModalContainerStyle}
-      modalContainerStyle={modalContainerStyle}
-      closeBtnStyle={closeBtnStyle}
-      headerStyle={headerStyle}
+      // backgroundModalContainerStyle={backgroundModalContainerStyle}
+      // modalContainerStyle={modalContainerStyle}
+      // closeBtnStyle={closeBtnStyle}
+      // headerStyle={headerStyle}
       headerMsg={headerMsg}
-      footerStyle={footerStyle}
+      // footerStyle={footerStyle}
       footerMsg={footerMsg}
     />
   )

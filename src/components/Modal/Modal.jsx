@@ -37,19 +37,19 @@ export const Modal = (props) => {
       className={status ? "openModal" : "closeModal"}
       style={backgroundModalContainerStyle}
     >
-      <div className="headerModal" style={headerStyle}>
-        <h1>{headerMsg}</h1>
-      </div>
       <div className="modalContainer" style={modalContainerStyle}>
+        <div className="headerModal" style={headerStyle}>
+          <p>{headerMsg}</p>
+          <button
+            id="closeModal"
+            onClick={() => toggleModal()}
+            style={closeBtnStyle}
+          ></button>
+        </div>
         <p style={modalMessageStyle}>{modalMessage}</p>
-        <button
-          id="closeModal"
-          onClick={() => toggleModal()}
-          style={closeBtnStyle}
-        ></button>
-      </div>
-      <div className="footerModale" style={footerStyle}>
-        <h1>{footerMsg}</h1>
+        <div className="footerModal" style={footerStyle}>
+          <p>{footerMsg}</p>
+        </div>
       </div>
     </div>
   )
