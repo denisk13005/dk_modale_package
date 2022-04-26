@@ -16,9 +16,10 @@ dk_modale_package is a styleable validation modal imported into your react proje
 
 This package is made for use in a react application like a registration form
 
-#### Exemple
+#### Example
 
-```import React, { useState } from "react"
+```
+import React, { useState } from "react"
 import { Modal } from "dk_modale_package"
 
 const form = () => {
@@ -85,9 +86,6 @@ const form = () => {
 
     </main>
   )
-
-
-
 }
 
 
