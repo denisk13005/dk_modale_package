@@ -15,7 +15,7 @@ stories.add("App", () => {
   const headerStyle = { backgroundColor: "yellow" }
   const headerMsg = "This is header message"
   const footerStyle = { backgroundColor: "brown" }
-  const footerMsg = "This is a footer message"
+  const footerMsg = "This is footer message"
 
   return (
     <Modal
