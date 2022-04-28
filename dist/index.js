@@ -35,7 +35,7 @@ function styleInject(css, ref) {
   }
 }
 
-var css_248z = ".openModal{background-color:rgba(27,27,27,.7);height:100vh;left:0;position:fixed;top:0;width:100%;z-index:2}.modalContainer{background-color:#fff;border-radius:90px 0 90px 20px;font-size:36px;height:20vh;left:50%;margin:auto;position:fixed;top:50%;transform:translate(-50%,-50%);width:80vw}#closeModal,.modalContainer{align-items:center;display:flex;justify-content:center}#closeModal{background-color:#00008b;border:none;border-radius:50%;color:#fff;cursor:pointer;height:30px;padding-bottom:3px;position:absolute;right:-15px;top:-15px;transform:scale(.7);transition:transform .2s;width:30px}#closeModal:after{transform:rotate(45deg)}#closeModal:after,#closeModal:before{background-color:#fff;content:\"\";display:block;height:1px;position:absolute;width:12px;z-index:4}#closeModal:before{transform:rotate(-45deg)}#closeModal:hover{border-radius:30% 10%;box-shadow:2px 1px 1px #383838;padding-bottom:5px;transform:scale(1.02)}.closeModal{display:none}.footerModale{background:pink;bottom:0;height:10vh;padding-bottom:20px;position:absolute}.footerModale,.headerModal{align-items:center;display:flex;justify-content:center;width:100%}.headerModal{background-color:green;height:20vh;margin:0}h1{margin:0}";
+var css_248z = ".openModal{background-color:rgba(27,27,27,.1);height:100vh;left:0;position:fixed;top:0;width:100%;z-index:2}p{font-size:24px}.headerModal{align-items:center;background:linear-gradient(rgba(0,0,0,.8),#fff);border-radius:20px 5px 0 0;color:#fff;display:flex;height:7vh;justify-content:center;position:absolute;top:0;width:100%}.footerModal p,.headerModal p{font-size:14px}#closeModal{align-items:center;background-color:#fff;border:none;border-radius:50%;color:#fff;cursor:pointer;display:flex;height:20px;justify-content:center;padding-bottom:3px;position:absolute;right:-10px;top:-10px;transform:scale(.7);transition:transform .2s;width:20px}#closeModal:after{transform:rotate(45deg)}#closeModal:after,#closeModal:before{background-color:#000;content:\"\";display:block;height:1px;position:absolute;width:12px;z-index:4}#closeModal:before{transform:rotate(-45deg)}.modalContainer{align-items:center;background-color:#fff;border-radius:20px 5px 20px 5px;display:flex;flex-direction:column;height:30vh;justify-content:center;left:50%;position:fixed;position:relative;top:50%;transform:translate(-50%,-50%);width:50vw}#closeModal:hover{border-radius:30% 10%;box-shadow:2px 1px 1px #383838;padding-bottom:5px;transform:scale(1.02)}.footerModal{align-items:center;background:linear-gradient(#fff,rgba(0,0,0,.8));border-radius:0 0 20px 5px;bottom:0;color:#fff;display:flex;height:6vh;justify-content:center;position:absolute;width:100%}.closeModal{display:none}";
 styleInject(css_248z);
 
 const PropTypes = require("prop-types");
@@ -74,21 +74,21 @@ const Modal = props => {
     className: status ? "openModal" : "closeModal",
     style: backgroundModalContainerStyle
   }, /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "headerModal",
-    style: headerStyle
-  }, /*#__PURE__*/React__default["default"].createElement("h1", null, headerMsg)), /*#__PURE__*/React__default["default"].createElement("div", {
     className: "modalContainer",
     style: modalContainerStyle
-  }, /*#__PURE__*/React__default["default"].createElement("p", {
-    style: modalMessageStyle
-  }, modalMessage), /*#__PURE__*/React__default["default"].createElement("button", {
+  }, /*#__PURE__*/React__default["default"].createElement("div", {
+    className: "headerModal",
+    style: headerStyle
+  }, /*#__PURE__*/React__default["default"].createElement("p", null, headerMsg), /*#__PURE__*/React__default["default"].createElement("button", {
     id: "closeModal",
     onClick: () => toggleModal(),
     style: closeBtnStyle
-  })), /*#__PURE__*/React__default["default"].createElement("div", {
-    className: "footerModale",
+  })), /*#__PURE__*/React__default["default"].createElement("p", {
+    style: modalMessageStyle
+  }, modalMessage), /*#__PURE__*/React__default["default"].createElement("div", {
+    className: "footerModal",
     style: footerStyle
-  }, /*#__PURE__*/React__default["default"].createElement("h1", null, footerMsg)));
+  }, /*#__PURE__*/React__default["default"].createElement("p", null, footerMsg))));
 };
 Modal.propTypes = {
   status: PropTypes.bool.isRequired,
