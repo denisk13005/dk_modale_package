@@ -34,30 +34,32 @@ const form = () => {
 
   //optionnal style of header
   const headerStyle = {
-    background: "linear-gradient(165deg,#4d5198, #daf2dc)",
-    fontSize: "48px",
+    background: "linear-gradient(rgba(0,0,0,0.7) , white )",
+    fontSize: "32px",
+    height: "4vh",
     color: "white",
   }
 
   //optionnal style of modal container
-  const modalContainerStyle = {
-    background:
-      "linear-gradient(165deg,#4d5198 0%,#daf2dc 40%,white ,#daf2dc 60%,#4d5198 100%)",
-    fontSize: "32px",
-    color: "#4d5198",
+const modalContainerStyle = {
+    background: "white",
+    fontSize: "48px",
+    color: "black",
+    height: "15vh",
   }
 
   //optionnal style of background modal container
-  const backgroundModalContainerStyle = {
+ const backgroundModalContainerStyle = {
     background:
       "linear-gradient(165deg,rgba(27,27,27,0.9) 0%,rgba(27,27,27,0.5) 45%, rgba(255,255,255,0.1) 50%,rgba(27,27,27,0.5) 55%,rgba(27,27,27,0.9) 100%)",
   }
 
   //optionnal style of footer
-  const footerStyle = {
-    background: "linear-gradient(165deg,#daf2dc, #4d5198)",
-    fontSize: "24px",
+ const footerStyle = {
+    background: "linear-gradient(white , rgba(0,0,0,0.7))",
+    fontSize: "32px",
     color: "white",
+    height: "4vh",
   }
 
 
@@ -66,11 +68,7 @@ const form = () => {
   const footerMsg = "Thanks" //message to display in footer
 
   return (
-    <main id="createEmployeeContainer">
-      <NavLink id="viewCurrentEmployee" to={"/employeeList"}>
-        View Current Employees
-      </NavLink>
-      <h2 id="title">Create Employee</h2>
+    <main id="container">
       <Modal
         status={modalIsOpen} // true if open false if close
         modalMessage={modaleMsg}
