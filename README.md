@@ -4,7 +4,7 @@ dk_modale_package is a styleable validation modal imported into your react proje
 
 #### EXAMPLE OF A STYLIZED RENDERING
 
-![The modale](./src/assets/img/modaleDk.png "modale")
+![The modale](./src/assets/img/modal.png "modale")
 
 ## Installation
 
