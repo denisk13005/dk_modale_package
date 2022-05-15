@@ -19,10 +19,12 @@ This package is made for use in a react application like a registration form
 #### Example
 
 ```
+//HomePage.jsx
+
 import React, { useState } from "react"
 import { Modal } from "dk_modale_package"
 
-const form = () => {
+const HomePage = () => {
 
   // !! REQUIRED !! variable to know the modal status (open or close)
   let [modalIsOpen,setModalIsOpen] = useState(false)
